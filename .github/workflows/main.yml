@@ -18,7 +18,6 @@ jobs:
       # les test unitaire
       - name: run unit test
         run: npm run test
-      # déploiement
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

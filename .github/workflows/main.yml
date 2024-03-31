@@ -19,8 +19,8 @@ jobs:
       - name: run unit test
         run: npm run test
       # déploiement
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: build
+          github_token: ${{ secrets.GIHUB_PAGES_KEY }}
+          publish_dir: ./build
